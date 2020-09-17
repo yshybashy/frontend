@@ -18,7 +18,7 @@ const Modal = () => {
     async function getItems() {
     const response = await Api.get('/sistema/games'); //busca todos os registros de jogos
      setGames(response.data)
-     console.log(response.data);
+     
     }
     
     
@@ -35,17 +35,16 @@ const Modal = () => {
         const square = response.data[index].squares
         const squareJson = JSON.parse(square);
         const historyJson = JSON.parse(historia);
-        console.log(historyJson)
+        
         setHistory(historyJson)
-       console.log(squareJson)
+       
         setSquares(squareJson)
       }catch(error){
         alert("Ocorreu um erro ao buscar os items");
       }
   }
 
-  console.log(games);
-
+  
   return (
     <>
     <ModalComponent

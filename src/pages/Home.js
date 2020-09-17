@@ -10,7 +10,7 @@ import Footer from '../components/footer';
 
 export default function Home() { //Responsavel por carregar todos os outros componentes
   useEffect(() => {
-    document.title = 'Jogo da velha com React';
+    document.title = 'Ipag - Jogo da velha';
   }, []);
 
   return (

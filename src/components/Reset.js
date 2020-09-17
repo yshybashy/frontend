@@ -44,7 +44,6 @@ export default function Reset() { //function responsavel por resetar o game
           history: data.history,
           squares: data.squares
         });
-        console.log("dados salvos");
       }).catch(e=>{
         console.log(e)
       });
